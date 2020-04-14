@@ -1,0 +1,15 @@
+
+[pitaya.cluster.rpc.client.nats]
+connect = "nats://nats:4222"
+
+[pitaya.cluster.rpc.server.nats]
+connect = "nats://nats:4222"
+
+[pitaya.cluster.sd.etcd]
+endpoints = "etcd:2379"
+
+[pitaya.groups.etcd]
+endpoints = "etcd:2379"
+
+[pitaya.db.mysql]
+connect = "wolfplus:passthis@tcp(mysql:3306)/gopoker"
