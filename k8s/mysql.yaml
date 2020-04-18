@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: mysql
+spec:
+  ports:
+    - port: 4222
+      targetPort: 4222
+  selector:
+    server: mysql
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: gopoker
+  name: mysql-node
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gopoker
+      server: mysql
+  template:
+    metadata:
+      labels:
+        app: gopoker
+        server: mysql
+    spec:
+      containers:
+        - image: mysql
+          name: mysql-node
+          ports:
+            - containerPort: 3306
+          env:
+          - name: MYSQL_ROOT_PASSWORD
+            value: pass5871
+

@@ -6,7 +6,7 @@ import (
 )
 
 func main()  {
-	app := corona.Default("../corona/corona.so")
+	app := corona.Default()
 	app.Register(&handler.Handler{}, "handler")
 	app.AddAcceptor(":3333")
 	app.Configure(true, "example", nil)

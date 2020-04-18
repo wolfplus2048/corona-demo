@@ -3,8 +3,8 @@ RUN mkdir -p /src
 COPY . /src
 WORKDIR /src
 RUN export GO111MODULE=on \
-     && export GOPROXY=https://mirrors.aliyun.com/goproxy/ \
-     && CGO_ENABLED=1 go build -o server
+     && export GOPROXY=https://goproxy.io/ \
+     && go build -trimpath -o server
 
 FROM wolfplus2048/corona:latest
 RUN mkdir -p /work
