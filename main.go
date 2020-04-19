@@ -3,12 +3,16 @@ package main
 import (
 	"github.com/wolfplus2048/corona-api"
 	"github.com/wolfplus2048/corona-demo/handler"
+	"net/http"
 )
 
 func main()  {
-	app := corona.Default()
+	http.Handle("/web/", http.StripPrefix("/web/", http.FileServer(http.Dir("web"))))
+	go http.ListenAndServe(":3334", nil)
+
+	app := corona.Default("../corona/corona-linux.so")
 	app.Register(&handler.Handler{}, "handler")
 	app.AddAcceptor(":3333")
-	app.Configure(true, "example", nil)
+	app.Configure(true, "demo", nil)
 	app.Start()
 }

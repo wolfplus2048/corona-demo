@@ -1,0 +1,9 @@
+ syntax = "proto3";
+ package proto;
+
+ message Greeter{
+    string userName = 1;
+ }
+ message Message{
+    string content = 2;
+ }

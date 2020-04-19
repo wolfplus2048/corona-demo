@@ -2,28 +2,37 @@ package handler
 
 import (
 	"context"
+	"github.com/wolfplus2048/corona-api"
+	"github.com/wolfplus2048/corona-demo/proto"
 	"log"
+
 )
+func GetSessionFromCtx(ctx context.Context) corona.Session {
+	sessionVal := ctx.Value("session")
+	if sessionVal == nil {
+		log.Print("ctx doesn't contain a session, are you calling GetSessionFromCtx from inside a remote?")
+		return nil
+	}
+	return sessionVal.(corona.Session)
+}
 
 type Handler struct {
 	
 }
 
 func (h Handler) Init() {
-	panic("implement me")
 }
 
 func (h Handler) AfterInit() {
-	panic("implement me")
 }
 
 func (h Handler) BeforeShutdown() {
-	panic("implement me")
 }
 
 func (h Handler) Shutdown() {
-	panic("implement me")
 }
-func (h Handler) Greeter(ctx context.Context, payload []byte) {
-	log.Printf("greeter:%v", payload)
+func (h Handler) Greeter(ctx context.Context, req *proto.Greeter) {
+	log.Printf("greeter :%s", req.UserName)
+	s := GetSessionFromCtx(ctx)
+	s.Push("onMessage", &proto.Message{Content: "Hello, " + req.UserName})
 }

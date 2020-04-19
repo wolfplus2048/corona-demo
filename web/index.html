@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Demo</title>
+</head>
+<body>
+<div id="container">
+    <ul>
+        <li v-for="msg in messages">[<span style="color:#ff0000;">{{msg.username}}</span>]{{msg.content}}</li>
+    </ul>
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js" type="text/javascript"></script>
+<!--[starx websocket library](https://github.com/topfreegames/pitaya-client-websocket)-->
+<script src="protocol.js" type="text/javascript"></script>
+<script src="starx-wsclient.js" type="text/javascript"></script>
+<script src="proto.js" type="text/javascript"></script>
+
+<script>
+    var v = new Vue({
+        el: "#container",
+        data: {
+            nickname:'guest' + Date.now(),
+            msg: []
+        },
+    });
+
+
+    var onMessage = function (data) {
+        console.log(data);
+        v.messages.push({name:data.username, content: data.content});
+    };
+
+    starx.init({host: '127.0.0.1', port: 3333, path: '/'}, function () {
+        console.log("initialized");
+        starx.on("onMessage", onMessage);
+        let req = new proto.proto.Greeter()
+        req.setUsername("corona")
+        starx.notify("demo.handler.Greeter", req.serializeBinary());
+    })
+</script>
+</body>
+</html>
