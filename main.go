@@ -10,7 +10,7 @@ func main()  {
 	http.Handle("/web/", http.StripPrefix("/web/", http.FileServer(http.Dir("web"))))
 	go http.ListenAndServe(":3334", nil)
 
-	app := corona.Default("../corona/corona-linux.so")
+	app := corona.Default()
 	app.Register(&handler.Handler{}, "handler")
 	app.AddAcceptor(":3333")
 	app.Configure(true, "demo", nil)
