@@ -14,4 +14,4 @@ go run -trimpath -gcflags "all=-N -l" main.go
 run client
 open browser => http://localhost:3334/web/
 
-You should see the default page: [hello corona]
+You should see the message: [hello corona]
