@@ -5,6 +5,7 @@ clone the app
 ```
 git clone https://github.com/wolfplus2048/corona-demo.git
 ```
+
 ### Running the tests
 run server
 ```
@@ -15,3 +16,5 @@ run client
 open browser => http://localhost:3334/web/
 
 You should see the message: [hello corona]
+
+Currently version are only supported on Linux and macOS.
