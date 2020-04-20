@@ -232,6 +232,8 @@ github.com/uber/jaeger-lib v2.2.0+incompatible h1:MxZXOiR2JuoANZ3J6DE/U0kSFv/eJ/
 github.com/uber/jaeger-lib v2.2.0+incompatible/go.mod h1:ComeNDZlWwrWnDv8aPp0Ba6+uUTzImX/AauajbLI56U=
 github.com/wolfplus2048/corona-api v0.0.0-20200418073348-0063ec6c22db h1:zK6hx+8VUVnOImEzEiU/5B9u0Yw13UVSTkdVgqeVU6U=
 github.com/wolfplus2048/corona-api v0.0.0-20200418073348-0063ec6c22db/go.mod h1:sydvsgUWePaSIZdL8HW9O51uS1vnDEWq8f4jEfGGVws=
+github.com/wolfplus2048/corona-api v0.1.1 h1:M6bRa/RCgBfkoWAo2hYTFYasxkWLbejTJVcnWIDN7gw=
+github.com/wolfplus2048/corona-api v0.1.1/go.mod h1:sydvsgUWePaSIZdL8HW9O51uS1vnDEWq8f4jEfGGVws=
 github.com/wolfplus2048/corona-demo v0.0.0-20200418091930-f8ffe5dbb955 h1:fpJZLXLJxPmwQw548xevHIhRlL2JU+17Rd560ZKlGYs=
 github.com/wolfplus2048/corona-demo v0.0.0-20200418091930-f8ffe5dbb955/go.mod h1:Xsgpfvx6db4XWCICHhGNiezMQGPfLNMXSL5lJ43lW1c=
 github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2 h1:eY9dn8+vbi4tKz5Qo6v2eYzo7kUS51QINcR5jNpbZS8=

@@ -31,7 +31,7 @@ require (
 	github.com/topfreegames/go-workers v1.0.1
 	github.com/uber/jaeger-client-go v2.22.1+incompatible
 	github.com/uber/jaeger-lib v2.2.0+incompatible // indirect
-	github.com/wolfplus2048/corona-api v0.0.0-20200418073348-0063ec6c22db
+	github.com/wolfplus2048/corona-api v0.1.1
 	golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e
 	google.golang.org/grpc v1.26.0
 	google.golang.org/protobuf v1.21.0
