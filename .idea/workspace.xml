@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db94f3d9-5054-4054-b5bd-6fea18cd359b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="db94f3d9-5054-4054-b5bd-6fea18cd359b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +55,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gopoker/gopoker-gate" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
@@ -128,10 +126,10 @@
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
     <state x="729" y="297" width="524" height="510" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1052@67.27.1853.1052" timestamp="1587300942484" />
-    <state x="777" y="293" width="424" height="492" key="FileChooserDialogImpl" timestamp="1587367077872">
+    <state x="777" y="285" width="424" height="492" key="FileChooserDialogImpl" timestamp="1587556512539">
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
-    <state x="777" y="293" width="424" height="492" key="FileChooserDialogImpl/67.27.1853.1052@67.27.1853.1052" timestamp="1587367077872" />
+    <state x="777" y="285" width="424" height="492" key="FileChooserDialogImpl/67.27.1853.1052@67.27.1853.1052" timestamp="1587556512539" />
     <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1587371077124">
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
